@@ -1,0 +1,72 @@
+@media (max-width: 768px) {
+	.container {
+		width: 100% !important;
+	}
+
+	.section {
+		padding: 40px 0px !important;
+	}
+
+	.mh {
+		display: none !important;
+	}
+
+	.mv {
+		display: block !important;
+	}
+
+	.navbar {
+		display: none !important;
+	}
+
+	.index .header {
+		margin-top: 0px;
+	}
+
+	.index .header .title {
+		font-size: 3em;
+	}
+
+	.index .header .search-box {
+		width: 100%;
+	}
+
+	.index .title-row {
+		display: block;
+	}
+
+	.index .title-row .title {
+		margin-bottom: 20px;
+	}
+
+	.index .filter {
+		width: 100%;
+		margin-left: 0px;
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+	}
+
+	.index .filter i {
+		margin-left: auto;
+	}
+
+	.asset-page .header {
+		margin-top: 0px;
+		height: 500px;
+	}
+
+	.asset-page .left-col {
+		width: 100%;
+	}
+
+	.asset-page .right-col {
+		width: 100%;
+	}
+
+	.asset-page .team-section .contact {
+		width: 100%;
+		margin: 0px 0px 20px 0px;
+	}
+
+}

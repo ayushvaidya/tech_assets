@@ -1,0 +1,184 @@
+.asset-page {
+	
+	.header {
+
+		width: 100%;
+		height: 300px;
+		background-color: #fafafa;
+		display: flex;
+		align-items: center;
+		margin-top: 90px;
+
+		.title {
+			font-size: 64px;
+			font-weight: 300;
+			margin-bottom: 20px;
+		}
+
+	}
+
+	.title-row {
+		align-items: center;
+		display: flex;
+		width: 100%;
+		
+		.title {
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+	}
+
+
+	.left-col {
+		width: 70%;
+		float: left;
+
+		.title {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+
+
+		.text {
+
+		}
+	}
+
+	.right-col {
+		width: calc(30% - 40px);
+		margin-left: 40px;
+		float: left;
+		padding-top: 90px;
+		padding-left: 40px;
+
+		.item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+
+			.icon {
+				font-size: 25px;
+				background: #80e700;
+				height: 40px;
+				width: 40px;
+				display: flex;
+				align-items: center;
+
+				i {
+					margin: 0 auto;
+					color: white;
+				}
+			}
+
+			.text {
+				margin-left: 20px;
+				font-weight: 600;
+			}
+		}
+
+	}
+
+	.tag-list {
+		width: 100%;
+		margin: 0 auto;
+		
+		.item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+
+			.icon {
+				font-size: 25px;
+				background: #80e700;
+				height: 40px;
+				width: 40px;
+				display: flex;
+				align-items: center;
+
+				i {
+					margin: 0 auto;
+					color: white;
+				}
+			}
+
+			.text {
+				margin-left: 20px;
+				font-weight: 600;
+			}
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+	/** Team Section **/
+
+	.team-section {
+
+		.title {
+			font-size: 36px;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		.contact {
+			margin: 20px 20px;
+			width: calc(33.33% - 40px);
+			display: flex;
+			float: left;
+			padding: 20px;
+			align-items: center;
+			border: 1px solid #ededed;
+
+			.picture {
+				height: 90px;
+				width: 90px;
+				background: #ededed;
+
+			}
+
+			.info {
+				margin-left: 20px;
+			}
+
+			.name {
+				font-weight: 600;
+			}
+
+			.role {
+
+			}
+
+			.email {
+
+			}
+
+		}
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

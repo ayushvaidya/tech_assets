@@ -1,0 +1,83 @@
+<div class="index">
+	<div class="header">
+		<div class="container">
+			<div class="box">
+				<div class="title">Tech Assets Repository</div>
+				<div class="search-box">
+					<i class="fa fa-search"></i>
+					<div class="ml-auto">
+
+							<button>Search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<%= form_tag tech_assets_path, :method => 'get' do %>
+		<%= text_field_tag :search, params[:search] %>
+		<%= submit_tag "Search" %>
+	<% end %>
+
+	<%= link_to "Advanced Search", new_search_path %>
+
+	<div class="section">
+		<div class="container">
+			<div class="title-row">
+				<div class="title">
+					View Assets
+				</div>
+				<div class="filter-row">
+					<div class="filter">
+						All Service Lines
+						<i class="fa fa-angle-down"></i>
+					</div>
+
+					<div class="dropdown filter">
+					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">Canada</a></li>
+					    <li><a href="#">USA</a></li>
+					    <li><a href="#">India</a></li>
+					  </ul>
+					</div>
+
+					<div class="filter">
+						All Technologies
+						<i class="fa fa-angle-down"></i>
+					</div>
+					<div class="filter">
+						All Maturities 
+						<i class="fa fa-angle-down"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="asset-box">
+
+				<% @tech_assets.each do |tech_asset| %>
+
+
+					<div class="asset-row">
+						<div class="picture">
+						</div>
+						<div class="info">
+							<div class="name"><%= tech_asset.title %></div>
+							<div class="text"><%= tech_asset.description %></div>
+						</div>
+						<div class="item ml-auto mh">Consulting</div>
+						<div class="item mh"><%= tech_asset.location %></div>
+						<div class="item mh">Insurance</div>
+						<div class="item mh">Guidewire</div>
+						<div class="item mh">In Development</div>
+					</div>			
+
+				<% end %>
+
+			</div>
+
+			<button class="align-center">View More</button>
+		</div>
+	</div>
+</div>

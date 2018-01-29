@@ -1,0 +1,13 @@
+
+<% if @search.search_tech_assets.empty? %>
+	<p> No record</p>
+<% else %>
+
+	<% @search.search_tech_assets.each do |tech_asset| %>
+		<br/>
+		<h1><%= tech_asset.title %></h1>
+		<p><%= tech_asset.description %></p>
+		<p><%= tech_asset.location %></p>
+		<br/>
+	<% end %>
+<% end %>
