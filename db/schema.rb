@@ -10,13 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180127182110) do
+ActiveRecord::Schema.define(version: 20180201163940) do
 
   create_table "searches", force: :cascade do |t|
     t.string "keywords"
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "service_line"
+    t.string "industry"
+    t.string "technology"
+    t.string "maturity"
   end
 
   create_table "tech_assets", force: :cascade do |t|
@@ -25,6 +29,11 @@ ActiveRecord::Schema.define(version: 20180127182110) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "location"
+    t.string "service_line"
+    t.string "industry"
+    t.string "technology"
+    t.string "maturity"
+    t.string "short_description"
   end
 
 end

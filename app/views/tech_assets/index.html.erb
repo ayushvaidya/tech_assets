@@ -46,6 +46,9 @@
 
 			<div class="asset-box">
 
+				<% if @tech_assets.empty? %>
+					No results. Please search again.
+				<% else %>
 				<% @tech_assets.each do |tech_asset| %>
 
 					<%= link_to tech_asset do %>
@@ -56,13 +59,14 @@
 							<div class="name"><%= tech_asset.title %></div>
 							<div class="text"><%= tech_asset.description %></div>
 						</div>
-						<div class="item ml-auto mh">Consulting</div>
-						<div class="item mh"><%= tech_asset.location %></div>
-						<div class="item mh">Insurance</div>
-						<div class="item mh">Guidewire</div>
-						<div class="item mh">In Development</div>
+						<div class="item ml-auto mh service_line"><%= tech_asset.service_line %></div>
+						<div class="item mh location"><%= tech_asset.location %></div>
+						<div class="item mh industry"><%= tech_asset.industry %></div>
+						<div class="item mh technology"><%= tech_asset.technology %></div>
+						<div class="item mh maturity"><%= tech_asset.maturity %></div>
 					</div>			
 					<% end %>
+				<% end %>
 				<% end %>
 
 			</div>

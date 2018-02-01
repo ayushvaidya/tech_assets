@@ -2,24 +2,6 @@
 	<div class="header">
 		<div class="container">
 			<div class="title"><%= @tech_asset.title %></div>
-			<div class="tag-list mv">
-				<div class="item">
-					<div class="icon"><i class="fa fa-tags" aria-hidden="true"></i></div>
-					<div class="text">Consulting</div>
-				</div>
-				<div class="item">
-					<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-					<div class="text"><%= @tech_asset.location %></div>
-				</div>
-				<div class="item">
-					<div class="icon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
-					<div class="text">Guidewire</div>
-				</div>
-				<div class="item">
-					<div class="icon"><i class="fa fa-file" aria-hidden="true"></i></div>
-					<div class="text">In Development</div>
-				</div>
-			</div>
 		</div>
 	</div>
 	<div class="section">
@@ -33,19 +15,23 @@
 			<div class="right-col mh">
 				<div class="item">
 					<div class="icon"><i class="fa fa-tags" aria-hidden="true"></i></div>
-					<div class="text">Consulting</div>
+					<div class="text"><%= @tech_asset.service_line %></div>
 				</div>
 				<div class="item">
 					<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-					<div class="text">Canada</div>
+					<div class="text"><%= @tech_asset.location %></div>
+				</div>
+				<div class="item">
+					<div class="icon"><i class="fa fa-cube" aria-hidden="true"></i></div>
+					<div class="text"><%= @tech_asset.industry %></div>
 				</div>
 				<div class="item">
 					<div class="icon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
-					<div class="text">Guidewire</div>
+					<div class="text"><%= @tech_asset.technology %></div>
 				</div>
 				<div class="item">
 					<div class="icon"><i class="fa fa-file" aria-hidden="true"></i></div>
-					<div class="text">In Development</div>
+					<div class="text"><%= @tech_asset.maturity %></div>
 				</div>
 			</div>
 		</div>

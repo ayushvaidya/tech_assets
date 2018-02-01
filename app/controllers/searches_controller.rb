@@ -2,6 +2,10 @@ class SearchesController < ApplicationController
 	def new
 		@search = Search.new
 		@locations = TechAsset.pluck(:location).uniq
+		@industries = TechAsset.pluck(:industry).uniq
+		@service_lines = TechAsset.pluck(:service_line).uniq
+		@maturities = TechAsset.pluck(:maturity).uniq
+		@technologies = TechAsset.pluck(:maturity).uniq
 	end
 
 	def create
@@ -16,6 +20,6 @@ class SearchesController < ApplicationController
 	private
 
 	def search_params
-		params.require(:search).permit(:keywords, :location)
+		params.require(:search).permit(:keywords, :location, :industry, :service_line, :maturity, :technology)
 	end
 end

@@ -27,7 +27,7 @@ before_action :find_tech_asset, only: [:show, :edit, :update, :destroy]
   private
 
   def tech_asset_params
-  	params.require(:tech_asset).permit(:title, :description, :location)
+  	params.require(:tech_asset).permit(:title, :description, :location, :service_line, :technology, :maturity, :short_description, :industry)
   end
 
   def find_tech_asset

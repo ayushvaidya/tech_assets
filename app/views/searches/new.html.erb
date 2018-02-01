@@ -11,8 +11,24 @@
 			</div>
 
 			<div class="form-group">
+				<%= s.label :service_line %><br/>
+				<%= s.select :service_line, options_for_select(@service_lines), {}, include_blank: true,  class: "form-control" %>
+			</div>
+			<div class="form-group">
 				<%= s.label :location %><br/>
-				<%= s.select :location, options_for_select(@locations), {}, include_blank: true,  class: "form-control mb-40" %>
+				<%= s.select :location, options_for_select(@locations), {}, include_blank: true,  class: "form-control" %>
+			</div>
+			<div class="form-group">
+				<%= s.label :industry %><br/>
+				<%= s.select :industry, options_for_select(@industries), {}, include_blank: true,  class: "form-control" %>
+			</div>
+			<div class="form-group">
+				<%= s.label :technology %><br/>
+				<%= s.select :technology, options_for_select(@technologies), {}, include_blank: true,  class: "form-control" %>
+			</div>
+			<div class="form-group">
+				<%= s.label :maturity %><br/>
+				<%= s.select :maturity, options_for_select(@maturities), {}, include_blank: true,  class: "form-control mb-40" %>
 			</div>
 
 			<div class="actions"><%= s.submit "Search", class: "button" %></div>

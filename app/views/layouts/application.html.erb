@@ -29,9 +29,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to root_path do %>Home<% end %></li>
-            <li><%= link_to new_search_path do %>Search Assets<% end %></li>
+            <li><%= link_to new_search_path do %>Search<% end %></li>
             <li><a>About</a></li>
-            <li><a>Submit Asset</a></li>
+            <li><%= link_to new_tech_asset_path do %>Submit Asset<% end %></li>
           </ul>
 
         </div><!--/.nav-collapse -->

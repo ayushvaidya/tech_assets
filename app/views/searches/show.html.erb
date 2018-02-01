@@ -2,9 +2,9 @@
 
 <div class="container">
 
-	<h1> View Assets </h1>
+	<h1> Search Results </h1>
 	<% if @search.search_tech_assets.empty? %>
-	<p> No record</p>
+	<p> No results. Please search again.</p>
 	<% else %>
 		<div class="asset-box">
 			<% @search.search_tech_assets.each do |tech_asset| %>
@@ -14,13 +14,13 @@
 						</div>
 						<div class="info">
 							<div class="name"><%= tech_asset.title %></div>
-							<div class="text"><%= tech_asset.description %></div>
+							<div class="text"><%= tech_asset.short_description %></div>
 						</div>
-						<div class="item ml-auto mh">Consulting</div>
+						<div class="item ml-auto mh"><%= tech_asset.service_line %></div>
 						<div class="item mh"><%= tech_asset.location %></div>
-						<div class="item mh">Insurance</div>
-						<div class="item mh">Guidewire</div>
-						<div class="item mh">In Development</div>
+						<div class="item mh"><%= tech_asset.industry %></div>
+						<div class="item mh"><%= tech_asset.technology %></div>
+						<div class="item mh"><%= tech_asset.maturity %></div>
 					</div>			
 				<% end %>
 			<% end %>

@@ -18,11 +18,31 @@
     <%= f.input :title, input_html: { class: 'form-control' } %>
   </div>
   <div class="form-group">
-    <%= f.input :description, input_html: { class: 'form-control' } %>
+    <%= f.input :short_description, input_html: { class: 'form-control' } %>
   </div>
   <div class="form-group">
-    <%= f.select :location, options_for_select([['Canada'], ['USA'], ['India']]) %>
+    <%= f.input :description, input_html: { class: 'form-control form-control-tall' } %>
+  </div>
+  <div class="form-group">
+    <%= f.label :service_line %><br/>
+    <%= f.select :service_line, options_for_select([['Consulting - Tech'], ['Consulting - HR'], ['Consulting - S&O'],['Audit'], ['Risk Advisory']]), {},  class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :location %><br/>
+    <%= f.select :location, options_for_select([['Canada'], ['USA'], ['India'],['Australia'], ['UK  ']]), {},  class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :industry %><br/>
+    <%= f.select :industry, options_for_select([['Energy & Resources'], ['Financial Services'], ['Consumer Products'], ['Public Sector']]), {},  class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :technology %><br/>
+    <%= f.select :technology, options_for_select([['Guidewire'], ['MuleSoft'], ['Oracle'], ['SAP'], ['Blockchain']]), {},  class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :maturity %><br/>
+    <%= f.select :maturity, options_for_select([['Scaled'], ['Proof of Concept'], ['In Development'], ['Proposition']]), {},  class: "form-control mb-40" %>
   </div>
 
-  <%= f.button :submit, class: "btn btn-primary" %>
+  <%= f.submit :submit, class: "button" %>
 <% end %>
