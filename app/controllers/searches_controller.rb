@@ -5,7 +5,7 @@ class SearchesController < ApplicationController
 		@industries = TechAsset.pluck(:industry).uniq
 		@service_lines = TechAsset.pluck(:service_line).uniq
 		@maturities = TechAsset.pluck(:maturity).uniq
-		@technologies = TechAsset.pluck(:maturity).uniq
+		@technologies = TechAsset.pluck(:technology).uniq
 	end
 
 	def create
