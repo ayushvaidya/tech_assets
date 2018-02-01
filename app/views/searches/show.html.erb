@@ -1,12 +1,11 @@
+<div class="search-page">
+
 <div class="container">
+
+	<h1> View Assets </h1>
 	<% if @search.search_tech_assets.empty? %>
 	<p> No record</p>
 	<% else %>
-		<div class="title-row">
-			<div class="title">
-				View Assets
-			</div>
-		</div>
 		<div class="asset-box">
 			<% @search.search_tech_assets.each do |tech_asset| %>
 				<%= link_to tech_asset do %>
@@ -27,4 +26,5 @@
 			<% end %>
 		</div>
 	<% end %>
+</div>
 </div>

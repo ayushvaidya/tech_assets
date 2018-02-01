@@ -1,21 +1,23 @@
-<div class="container">
-	<h1> Advanced Search </h1>
+<div class="search-page">
 
-	<%= simple_form_for @search do |s| %>
+	<div class="container">
+		<h1> Search Assets </h1>
 
-		<div class="field">
-			<%= s.label :keywords %><br/>
-			<%= s.text_field :keywords %>
-		</div>
+		<%= simple_form_for @search do |s| %>
 
-		<div class="field">
-			<%= s.label :location %><br/>
-			<%= s.select :location, options_for_select(@locations), include_blank: true %>
-		</div>
+			<div class="form-group">
+				<%= s.label :keywords %><br/>
+				<%= s.text_field :keywords, class: "form-control" %>
+			</div>
 
-		<div class="actions"><%= s.submit "Search", class: "btn-primary" %></div>
+			<div class="form-group">
+				<%= s.label :location %><br/>
+				<%= s.select :location, options_for_select(@locations), {}, include_blank: true,  class: "form-control mb-40" %>
+			</div>
 
-	<% end %>
+			<div class="actions"><%= s.submit "Search", class: "button" %></div>
 
-	<%= link_to "Back", root_path %>
+		<% end %>
+
+	</div>
 </div>
