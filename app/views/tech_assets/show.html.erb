@@ -1,3 +1,83 @@
-<%= @tech_asset.title %>
-<%= @tech_asset.description %>
-<%= @tech_asset.location %>
+<div class="asset-page">
+	<div class="header">
+		<div class="container">
+			<div class="title"><%= @tech_asset.title %></div>
+			<div class="tag-list mv">
+				<div class="item">
+					<div class="icon"><i class="fa fa-tags" aria-hidden="true"></i></div>
+					<div class="text">Consulting</div>
+				</div>
+				<div class="item">
+					<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+					<div class="text"><%= @tech_asset.location %></div>
+				</div>
+				<div class="item">
+					<div class="icon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
+					<div class="text">Guidewire</div>
+				</div>
+				<div class="item">
+					<div class="icon"><i class="fa fa-file" aria-hidden="true"></i></div>
+					<div class="text">In Development</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+
+			<div class="left-col">
+				<div class="title">About <%= @tech_asset.title %></div>
+				<div class="text"><%= @tech_asset.description %>
+				</div>
+			</div>
+			<div class="right-col mh">
+				<div class="item">
+					<div class="icon"><i class="fa fa-tags" aria-hidden="true"></i></div>
+					<div class="text">Consulting</div>
+				</div>
+				<div class="item">
+					<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+					<div class="text">Canada</div>
+				</div>
+				<div class="item">
+					<div class="icon"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
+					<div class="text">Guidewire</div>
+				</div>
+				<div class="item">
+					<div class="icon"><i class="fa fa-file" aria-hidden="true"></i></div>
+					<div class="text">In Development</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="team-section section section--border-top">
+		<div class="container">
+			<div class="title">Asset Team</div>
+			<div class="contact">
+				<div class="picture"></div>
+				<div class="info">
+					<div class="name">Firas Al Osman</div>
+					<div class="role">SM - Technology, CA</div>
+					<div class="email">firas@deloitte.ca</div>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="picture"></div>
+				<div class="info">
+					<div class="name">Firas Al Osman</div>
+					<div class="role">SM - Technology, CA</div>
+					<div class="email">firas@deloitte.ca</div>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="picture"></div>
+				<div class="info">
+					<div class="name">Firas Al Osman</div>
+					<div class="role">SM - Technology, CA</div>
+					<div class="email">firas@deloitte.ca</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
