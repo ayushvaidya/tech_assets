@@ -1,0 +1,278 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+$primary-color: #80e700;
+
+/** Universal **/
+
+body{
+    font-family: "Open Sans";
+    font-size: 14px;
+	line-height: 1.75;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.align-center{
+	margin: 0 auto;
+}
+
+
+/** Containers **/
+
+.container{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.section{
+	padding: 100px 0px;
+}
+
+.section--border-bottom{
+	border-bottom: 1px solid #ededed;	
+}
+
+.section--border-top {
+	border-top: 1px solid #ededed;	
+}
+
+.row{
+	display: flex;
+}
+
+/** Mobile **/
+
+.mv {
+	display: none;
+}
+
+/** Form **/
+
+.form-control {
+	height: 50px;
+	width: 60%;
+	border-radius: 0px;
+}
+
+
+/** Text Styling **/
+h1,h2,h3,h4,h5{
+	margin: 0px;
+	line-height: 1.2;
+}
+
+h1{
+    font-size: 90px;
+    font-weight: bold;
+}
+
+h2{
+    font-size:24px;
+}
+
+h3{
+	font-size: 36px;
+	font-weight: 700;
+  	font-family: "Chronicle Display";
+}
+
+h4{
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h5{
+	font-weight: 600;
+	font-size: 16px;
+}
+
+p{
+
+}
+
+.font-light{
+	color: rgb(131, 137, 146);
+}
+
+.font-white{
+	color: white;
+}
+
+.text-underline{
+	background: linear-gradient(to top,#8cf100,#8cf100 45%,transparent 45%,transparent);
+	background-position: center 50%;
+	background-repeat: no-repeat;
+	background-size: 250%;
+	display: inline-block;
+}
+
+/** Buttons **/
+
+button{
+	width: 200px;
+	height: 60px;
+	background: $primary-color;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	display: block;
+}
+
+.button {
+	width: 200px;
+	height: 60px;
+	background: $primary-color;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	display: block;
+}
+
+/** Link **/
+
+a {
+	color: inherit;	
+}
+
+a:hover, a:focus {
+	color: inherit;	
+	text-decoration: none;	
+}
+
+
+/** Grid **/
+
+/* Margin Bottom */
+.mb-0{
+	margin-bottom: 0px !important;
+}
+
+
+.mb-10{
+	margin-bottom: 10px;
+}
+
+.mb-20{
+	margin-bottom: 20px;
+}
+
+.mb-30{
+	margin-bottom: 30px;
+}
+
+.mb-40{
+	margin-bottom: 40px;
+}
+
+.mb-50{
+	margin-bottom: 50px;
+}
+
+.mb-60{
+	margin-bottom: 60px;
+}
+
+.mb-70{
+	margin-bottom: 70px;
+}
+
+.mb-80{
+	margin-bottom: 80px;
+}
+
+/* Margin Right */
+
+.mr-40{
+	margin-right: 40px !important;
+}
+
+/* Margin Left */
+
+.ml-auto {
+	margin-left: auto !important;
+}
+
+
+/** Navbar **/
+
+.navbar{
+	height: 90px;
+	display: flex;
+	align-items: center;
+	background: white;
+}
+
+.navbar-brand{
+	background: url(https://dl.dropboxusercontent.com/s/9s3fa9nf9lx0dr9/DEL_PRI_Digital_RGB.PNG?dl=0);
+	height: 60px;
+	width: 130px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.navbar-default .navbar-nav > li > a{
+	font-weight: 600;
+	padding: 10px 20px;
+	margin-left: 20px;
+}
+
+.navbar-right{
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+/** Footer **/
+
+.social-box{
+
+	display: none;
+	&__icon{
+		font-size: 25px;
+		height: 40px;
+		width: 40px;
+		margin-right: 15px;
+		text-align: center;
+		color: white;
+		background: black;
+	}
+}
+
+.footer-link-box{
+	display: flex;
+	h5{
+		margin-right: 40px;
+	}
+}
+
+

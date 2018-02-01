@@ -1,0 +1,23 @@
+<div class="search-page">
+
+	<div class="container">
+		<h1> Search Assets </h1>
+
+		<%= simple_form_for @search do |s| %>
+
+			<div class="form-group">
+				<%= s.label :keywords %><br/>
+				<%= s.text_field :keywords, class: "form-control" %>
+			</div>
+
+			<div class="form-group">
+				<%= s.label :location %><br/>
+				<%= s.select :location, options_for_select(@locations), {}, include_blank: true,  class: "form-control mb-40" %>
+			</div>
+
+			<div class="actions"><%= s.submit "Search", class: "button" %></div>
+
+		<% end %>
+
+	</div>
+</div>
